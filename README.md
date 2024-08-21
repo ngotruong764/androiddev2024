@@ -10,7 +10,7 @@ Students are expected to:
 Student Info
 =======================
 
-* Name: *YourNameHere*
-* ID: *YourIdHere*
+* Name: Ngô Quang Trường
+* ID: BA12-180
 * Group ID: *Your Group ID here*
 * Project Name: *Your Project Name here*
