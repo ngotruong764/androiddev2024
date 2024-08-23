@@ -9,8 +9,7 @@ import androidx.core.graphics.Insets;
 import androidx.core.view.ViewCompat;
 import androidx.core.view.WindowInsetsCompat;
 
-public class MainActivity extends AppCompatActivity {
-
+public class WeatherActivity extends AppCompatActivity {
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
@@ -26,18 +25,19 @@ public class MainActivity extends AppCompatActivity {
     @Override
     protected void onStart() {
         super.onStart();
+        Log.i("start", "On start");
     }
 
     @Override
     protected void onResume() {
         super.onResume();
-        System.out.println("On resume");
+        Log.i("resume", "On resume");
     }
 
     @Override
     protected void onPause() {
         super.onPause();
-        System.out.println("onPause");
+        Log.i("pause", "On pause");
     }
 
 
@@ -45,6 +45,12 @@ public class MainActivity extends AppCompatActivity {
     @Override
     protected void onStop() {
         super.onStop();
-        System.out.println("On stop");
+        Log.i("stop", "On stop");
+    }
+
+    @Override
+    protected void onDestroy() {
+        super.onDestroy();
+        Log.i("destroy", "On destroy");
     }
 }
