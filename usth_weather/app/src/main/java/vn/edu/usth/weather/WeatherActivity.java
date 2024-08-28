@@ -23,7 +23,7 @@ public class WeatherActivity extends AppCompatActivity {
 //            v.setPadding(systemBars.left, systemBars.top, systemBars.right, systemBars.bottom);
 //            return insets;
 //        });
-
+        findViewById(R.id.frameLayout);
         ForecastFragment forecastFragment = new ForecastFragment();
         getSupportFragmentManager().beginTransaction()
                 .add(R.id.frameLayout, forecastFragment)
