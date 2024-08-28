@@ -9,6 +9,7 @@ import android.view.View;
 import android.view.ViewGroup;
 import android.widget.ImageView;
 import android.widget.LinearLayout;
+import android.widget.TextView;
 
 public class ForecastFragment extends Fragment {
     @Override
@@ -30,9 +31,15 @@ public class ForecastFragment extends Fragment {
         //-
         ImageView cloudy = new ImageView(getContext());
         cloudy.setImageResource(R.drawable.cloudy);
+
+        //
+        TextView text = new TextView(getContext());
+//        text.append("This is a text");
+        text.setText("This is a text");
+        text.setTextSize(30);
+        linearLayout.addView(text);
         linearLayout.addView(cloudy);
         linearLayout.addView(v);
-        //
         return linearLayout;
         // Inflate the layout for this fragment
 //        return inflater.inflate(R.layout.fragment_forecast, container, false);
