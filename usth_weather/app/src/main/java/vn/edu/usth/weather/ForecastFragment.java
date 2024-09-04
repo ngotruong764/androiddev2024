@@ -21,28 +21,29 @@ public class ForecastFragment extends Fragment {
     @Override
     public View onCreateView(LayoutInflater inflater, ViewGroup container,
                              Bundle savedInstanceState) {
-        View v = new View(getContext());
-        v.setBackgroundColor(0x2000FF00);
+//        View v = new View(getContext());
+//        v.setBackgroundColor(0x2000FF00);
         // set linear layout
-        LinearLayout linearLayout = new LinearLayout(getContext());
-        linearLayout.setOrientation(LinearLayout.VERTICAL);
-        //
-//        linearLayout.setBackgroundColor(0x2000FF00);
-        //-
-        ImageView cloudy = new ImageView(getContext());
-        cloudy.setImageResource(R.drawable.cloudy);
+//        LinearLayout linearLayout = new LinearLayout(getContext());
+//        linearLayout.setOrientation(LinearLayout.VERTICAL);
+//        //
+////        linearLayout.setBackgroundColor(0x2000FF00);
+//        //-
+//        ImageView cloudy = new ImageView(getContext());
+//        cloudy.setImageResource(R.drawable.cloudy);
+//
+//        //
+//        TextView text = new TextView(getContext());
+////        text.append("This is a text");
+//        text.setText("This is a text");
+//        text.setTextSize(30);
+//        linearLayout.addView(text);
+//        linearLayout.addView(cloudy);
+//        linearLayout.addView(v);
+//        return linearLayout;
 
-        //
-        TextView text = new TextView(getContext());
-//        text.append("This is a text");
-        text.setText("This is a text");
-        text.setTextSize(30);
-        linearLayout.addView(text);
-        linearLayout.addView(cloudy);
-        linearLayout.addView(v);
-        return linearLayout;
         // Inflate the layout for this fragment
-//        return inflater.inflate(R.layout.fragment_forecast, container, false);
+        return inflater.inflate(R.layout.fragment_forecast, container, false);
     }
 
 }

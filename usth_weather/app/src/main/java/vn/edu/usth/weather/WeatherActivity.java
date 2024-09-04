@@ -1,10 +1,9 @@
 package vn.edu.usth.weather;
 
-import android.annotation.SuppressLint;
-import android.app.Fragment;
-import android.graphics.Color;
 import android.os.Bundle;
 import android.util.Log;
+import android.view.View;
+import android.widget.LinearLayout;
 
 import androidx.activity.EdgeToEdge;
 import androidx.appcompat.app.AppCompatActivity;
@@ -18,15 +17,20 @@ public class WeatherActivity extends AppCompatActivity {
         super.onCreate(savedInstanceState);
         EdgeToEdge.enable(this);
         setContentView(R.layout.activity_main);
-//        ViewCompat.setOnApplyWindowInsetsListener(findViewById(R.id.main), (v, insets) -> {
-//            Insets systemBars = insets.getInsets(WindowInsetsCompat.Type.systemBars());
-//            v.setPadding(systemBars.left, systemBars.top, systemBars.right, systemBars.bottom);
-//            return insets;
-//        });
-        ForecastFragment forecastFragment = new ForecastFragment();
-        getSupportFragmentManager().beginTransaction()
-                .add(R.id.frameLayout, forecastFragment)
-                .commit();
+        ViewCompat.setOnApplyWindowInsetsListener(findViewById(R.id.main), (v, insets) -> {
+            Insets systemBars = insets.getInsets(WindowInsetsCompat.Type.systemBars());
+            v.setPadding(systemBars.left, systemBars.top, systemBars.right, systemBars.bottom);
+            return insets;
+        });
+        // set linear layout
+//        LinearLayout linearLayout = new LinearLayout(getBaseContext());
+//        View forecast_view = findViewById(R.id.forecast_fragment_container);
+//        linearLayout.addView(forecast_view);
+
+//        ForecastFragment forecastFragment = new ForecastFragment();
+//        getSupportFragmentManager().beginTransaction()
+//                .add(R.id.forecast_fragment_container, forecastFragment)
+//                .commit();
 //        setContentView(R.layout.background);
     }
 
