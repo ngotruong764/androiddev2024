@@ -2,26 +2,34 @@ package vn.edu.usth.weather;
 
 import android.os.Bundle;
 import android.util.Log;
-import android.view.View;
-import android.widget.LinearLayout;
 
 import androidx.activity.EdgeToEdge;
 import androidx.appcompat.app.AppCompatActivity;
 import androidx.core.graphics.Insets;
 import androidx.core.view.ViewCompat;
 import androidx.core.view.WindowInsetsCompat;
+import androidx.viewpager2.adapter.FragmentStateAdapter;
+import androidx.viewpager2.widget.ViewPager2;
+
+import vn.edu.usth.weather.viewpager.CustomPagerAdapter;
 
 public class WeatherActivity extends AppCompatActivity {
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         EdgeToEdge.enable(this);
-        setContentView(R.layout.activity_main);
+        setContentView(R.layout.weather_activity_main);
         ViewCompat.setOnApplyWindowInsetsListener(findViewById(R.id.main), (v, insets) -> {
             Insets systemBars = insets.getInsets(WindowInsetsCompat.Type.systemBars());
             v.setPadding(systemBars.left, systemBars.top, systemBars.right, systemBars.bottom);
             return insets;
         });
+
+        // set view pager
+        ViewPager2 viewPager = findViewById(R.id.viewpager);
+        FragmentStateAdapter pagerAdapter = new CustomPagerAdapter(WeatherActivity.this);
+        viewPager.setAdapter(pagerAdapter);
+        viewPager.setCurrentItem(0);
         // set linear layout
 //        LinearLayout linearLayout = new LinearLayout(getBaseContext());
 //        View forecast_view = findViewById(R.id.forecast_fragment_container);
