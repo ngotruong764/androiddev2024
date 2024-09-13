@@ -5,8 +5,8 @@
     android:layout_height="match_parent"
     android:orientation="vertical"
     tools:context=".ForecastFragment"
-    android:background="#dffdec"
-    android:layout_margin="20sp"
+    android:background="@color/green_1"
+    android:layout_margin="@dimen/layout_margin_medium"
     android:id="@+id/forecast">
     <LinearLayout
         android:layout_width="match_parent"
@@ -15,14 +15,14 @@
         <TextView
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:textSize="30sp"
-            android:layout_marginRight="20sp"
+            android:textSize="@dimen/title_large_size"
+            android:layout_marginEnd="@dimen/text_margin_medium"
             android:text="@string/Mon">
         </TextView>
         <ImageView
             android:layout_width="51dp"
             android:layout_height="48dp"
-            android:layout_marginRight="20sp"
+            android:layout_marginEnd="@dimen/text_margin_medium"
             android:src="@drawable/cloudy">
         </ImageView>
         <LinearLayout
@@ -32,14 +32,14 @@
             <TextView
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
-                android:text="Party Cloudy"
-                android:textSize="30sp">
+                android:text="@string/party_cloudy"
+                android:textSize="@dimen/title_large_size">
             </TextView>
             <TextView
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
-                android:text="24C - 31C"
-                android:textSize="20sp">
+                android:text="@string/degree_1"
+                android:textSize="@dimen/title_medium_size">
             </TextView>
         </LinearLayout>
     </LinearLayout>
@@ -50,15 +50,13 @@
         <TextView
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:layout_marginRight="20sp"
-            android:textSize="30sp"
+            android:layout_marginEnd="@dimen/text_margin_medium"            android:textSize="30sp"
             android:text="@string/Tue">
         </TextView>
         <ImageView
             android:layout_width="51dp"
             android:layout_height="48dp"
-            android:layout_marginRight="20sp"
-            android:src="@drawable/cloudy">
+            android:layout_marginEnd="@dimen/text_margin_medium"            android:src="@drawable/cloudy">
         </ImageView>
         <LinearLayout
             android:layout_width="wrap_content"
@@ -67,14 +65,14 @@
             <TextView
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
-                android:textSize="30sp"
-                android:text="Party Cloudy">
+                android:textSize="@dimen/text_margin_large"
+                android:text="@string/party_cloudy">
             </TextView>
             <TextView
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
-                android:textSize="20sp"
-                android:text="24C - 31C">
+                android:textSize="@dimen/text_margin_medium"
+                android:text="@string/degree_1">
             </TextView>
         </LinearLayout>
     </LinearLayout>
@@ -85,15 +83,13 @@
         <TextView
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:textSize="30sp"
-            android:layout_marginRight="20sp"
-            android:text="@string/Wed">
+            android:textSize="@dimen/text_margin_large"
+            android:layout_marginEnd="@dimen/text_margin_medium"            android:text="@string/Wed">
         </TextView>
         <ImageView
             android:layout_width="51dp"
             android:layout_height="48dp"
-            android:layout_marginRight="20sp"
-            android:src="@drawable/cloudy">
+            android:layout_marginEnd="@dimen/text_margin_medium"            android:src="@drawable/cloudy">
         </ImageView>
         <LinearLayout
             android:layout_width="wrap_content"
@@ -102,14 +98,14 @@
             <TextView
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
-                android:textSize="30sp"
-                android:text="Party Cloudy">
+                android:textSize="@dimen/text_margin_large"
+                android:text="@string/party_cloudy">
             </TextView>
             <TextView
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
-                android:textSize="20sp"
-                android:text="24C - 31C">
+                android:textSize="@dimen/text_margin_medium"
+                android:text="@string/degree_1">
             </TextView>
         </LinearLayout>
     </LinearLayout>
@@ -120,16 +116,14 @@
         <TextView
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:textSize="30sp"
-            android:layout_marginRight="20sp"
-            android:text="@string/Thu">
+            android:textSize="@dimen/text_margin_large"
+            android:layout_marginEnd="@dimen/text_margin_medium"            android:text="@string/Thu">
         </TextView>
 
         <ImageView
             android:layout_width="51dp"
             android:layout_height="48dp"
-            android:layout_marginRight="20sp"
-            android:src="@drawable/cloudy">
+            android:layout_marginEnd="@dimen/text_margin_medium"            android:src="@drawable/cloudy">
         </ImageView>
         <LinearLayout
             android:layout_width="wrap_content"
@@ -138,14 +132,14 @@
             <TextView
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
-                android:textSize="30sp"
-                android:text="Party Cloudy">
+                android:textSize="@dimen/text_margin_large"
+                android:text="@string/party_cloudy">
             </TextView>
             <TextView
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
-                android:textSize="20sp"
-                android:text="24C - 31C">
+                android:textSize="@dimen/text_margin_medium"
+                android:text="@string/degree_1">
             </TextView>
         </LinearLayout>
     </LinearLayout>
@@ -156,16 +150,14 @@
         <TextView
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:textSize="30sp"
-            android:layout_marginRight="20sp"
-            android:text="@string/Fri">
+            android:textSize="@dimen/text_margin_large"
+            android:layout_marginEnd="@dimen/text_margin_medium"            android:text="@string/Fri">
         </TextView>
 
         <ImageView
             android:layout_width="51dp"
             android:layout_height="48dp"
-            android:layout_marginRight="20sp"
-            android:src="@drawable/cloudy">
+            android:layout_marginEnd="@dimen/text_margin_medium"            android:src="@drawable/cloudy">
         </ImageView>
         <LinearLayout
             android:layout_width="wrap_content"
@@ -174,14 +166,14 @@
             <TextView
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
-                android:textSize="30sp"
-                android:text="Party Cloudy">
+                android:textSize="@dimen/text_margin_large"
+                android:text="@string/party_cloudy">
             </TextView>
             <TextView
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
-                android:textSize="20sp"
-                android:text="24C - 31C">
+                android:textSize="@dimen/text_margin_medium"
+                android:text="@string/degree_1">
             </TextView>
         </LinearLayout>
     </LinearLayout>
@@ -192,16 +184,14 @@
         <TextView
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:textSize="30sp"
-            android:layout_marginRight="20sp"
-            android:text="@string/Sat">
+            android:textSize="@dimen/text_margin_large"
+            android:layout_marginEnd="@dimen/text_margin_medium"            android:text="@string/Sat">
         </TextView>
 
         <ImageView
             android:layout_width="51dp"
             android:layout_height="48dp"
-            android:layout_marginRight="20sp"
-            android:src="@drawable/cloudy">
+            android:layout_marginEnd="@dimen/text_margin_medium"            android:src="@drawable/cloudy">
         </ImageView>
         <LinearLayout
             android:layout_width="wrap_content"
@@ -210,14 +200,14 @@
             <TextView
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
-                android:textSize="30sp"
-                android:text="Party Cloudy">
+                android:textSize="@dimen/text_margin_large"
+                android:text="@string/party_cloudy">
             </TextView>
             <TextView
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
-                android:textSize="20sp"
-                android:text="24C - 31C">
+                android:textSize="@dimen/text_margin_medium"
+                android:text="@string/degree_1">
             </TextView>
         </LinearLayout>
     </LinearLayout>
@@ -228,15 +218,13 @@
         <TextView
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:textSize="30sp"
-            android:layout_marginRight="20sp"
-            android:text="@string/Sun">
+            android:textSize="@dimen/text_margin_large"
+            android:layout_marginEnd="@dimen/text_margin_medium"            android:text="@string/Sun">
         </TextView>
         <ImageView
             android:layout_width="51dp"
             android:layout_height="48dp"
-            android:layout_marginRight="20sp"
-            android:src="@drawable/cloudy">
+            android:layout_marginEnd="@dimen/text_margin_medium"            android:src="@drawable/cloudy">
         </ImageView>
         <LinearLayout
             android:layout_width="wrap_content"
@@ -245,14 +233,14 @@
             <TextView
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
-                android:textSize="30sp"
-                android:text="Party Cloudy">
+                android:textSize="@dimen/text_margin_large"
+                android:text="@string/party_cloudy">
             </TextView>
             <TextView
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
-                android:textSize="20sp"
-                android:text="24C - 31C">
+                android:textSize="@dimen/text_margin_medium"
+                android:text="@string/degree_1">
             </TextView>
         </LinearLayout>
     </LinearLayout>
