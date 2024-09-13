@@ -1,7 +1,7 @@
 <resources>
     <string name="app_name">usth_weather</string>
     <!-- TODO: Remove or change this placeholder text -->
-    <string name="hello_blank_fragment">Hello blank fragment</string>
+    <string name="hello_blank_fragment" translatable="false">Hello blank fragment</string>
     <string name="Mon">Mon</string>
     <string name="Tue">Tue</string>
     <string name="Wed">Wed</string>
@@ -9,7 +9,7 @@
     <string name="Fri">Fri</string>
     <string name="Sat">Sat</string>
     <string name="Sun">Sun</string>
-    <string name="usth_weather">USTH WEATHER</string>
+    <string name="usth_weather" translatable="false">USTH WEATHER</string>
     <string name="party_cloudy">Party Cloudy</string>
-    <string name="degree_1">24C - 31C</string>
+    <string name="degree_1" translatable="false">24C - 31C</string>
 </resources>

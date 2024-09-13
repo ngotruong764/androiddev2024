@@ -1,40 +1,46 @@
 <?xml version="1.0" encoding="utf-8"?>
 <LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/forecast"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    android:orientation="vertical"
-    tools:context=".ForecastFragment"
-    android:background="@color/green_1"
     android:layout_margin="@dimen/layout_margin_medium"
-    android:id="@+id/forecast">
+    android:background="@color/green_1"
+    android:orientation="vertical"
+    tools:context=".ForecastFragment">
+
     <LinearLayout
         android:layout_width="match_parent"
-        android:orientation="horizontal"
-        android:layout_height="wrap_content">
+        android:layout_height="wrap_content"
+        android:orientation="horizontal">
+
         <TextView
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:textSize="@dimen/title_large_size"
             android:layout_marginEnd="@dimen/text_margin_medium"
-            android:text="@string/Mon">
+            android:text="@string/Mon"
+            android:textSize="@dimen/title_large_size">
         </TextView>
+
         <ImageView
             android:layout_width="51dp"
             android:layout_height="48dp"
             android:layout_marginEnd="@dimen/text_margin_medium"
             android:src="@drawable/cloudy">
         </ImageView>
+
         <LinearLayout
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:orientation="vertical">
+
             <TextView
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
                 android:text="@string/party_cloudy"
                 android:textSize="@dimen/title_large_size">
             </TextView>
+
             <TextView
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
@@ -43,204 +49,249 @@
             </TextView>
         </LinearLayout>
     </LinearLayout>
+
     <LinearLayout
         android:layout_width="match_parent"
-        android:orientation="horizontal"
-        android:layout_height="wrap_content">
+        android:layout_height="wrap_content"
+        android:orientation="horizontal">
+
         <TextView
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:layout_marginEnd="@dimen/text_margin_medium"            android:textSize="30sp"
-            android:text="@string/Tue">
-        </TextView>
-        <ImageView
-            android:layout_width="51dp"
-            android:layout_height="48dp"
-            android:layout_marginEnd="@dimen/text_margin_medium"            android:src="@drawable/cloudy">
-        </ImageView>
-        <LinearLayout
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:orientation="vertical">
-            <TextView
-                android:layout_width="wrap_content"
-                android:layout_height="wrap_content"
-                android:textSize="@dimen/text_margin_large"
-                android:text="@string/party_cloudy">
-            </TextView>
-            <TextView
-                android:layout_width="wrap_content"
-                android:layout_height="wrap_content"
-                android:textSize="@dimen/text_margin_medium"
-                android:text="@string/degree_1">
-            </TextView>
-        </LinearLayout>
-    </LinearLayout>
-    <LinearLayout
-        android:layout_width="match_parent"
-        android:orientation="horizontal"
-        android:layout_height="wrap_content">
-        <TextView
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:textSize="@dimen/text_margin_large"
-            android:layout_marginEnd="@dimen/text_margin_medium"            android:text="@string/Wed">
-        </TextView>
-        <ImageView
-            android:layout_width="51dp"
-            android:layout_height="48dp"
-            android:layout_marginEnd="@dimen/text_margin_medium"            android:src="@drawable/cloudy">
-        </ImageView>
-        <LinearLayout
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:orientation="vertical">
-            <TextView
-                android:layout_width="wrap_content"
-                android:layout_height="wrap_content"
-                android:textSize="@dimen/text_margin_large"
-                android:text="@string/party_cloudy">
-            </TextView>
-            <TextView
-                android:layout_width="wrap_content"
-                android:layout_height="wrap_content"
-                android:textSize="@dimen/text_margin_medium"
-                android:text="@string/degree_1">
-            </TextView>
-        </LinearLayout>
-    </LinearLayout>
-    <LinearLayout
-        android:layout_width="match_parent"
-        android:orientation="horizontal"
-        android:layout_height="wrap_content">
-        <TextView
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:textSize="@dimen/text_margin_large"
-            android:layout_marginEnd="@dimen/text_margin_medium"            android:text="@string/Thu">
+            android:layout_marginEnd="@dimen/text_margin_medium"
+            android:text="@string/Tue"
+            android:textSize="30sp">
         </TextView>
 
         <ImageView
             android:layout_width="51dp"
             android:layout_height="48dp"
-            android:layout_marginEnd="@dimen/text_margin_medium"            android:src="@drawable/cloudy">
+            android:layout_marginEnd="@dimen/text_margin_medium"
+            android:src="@drawable/cloudy">
         </ImageView>
+
         <LinearLayout
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:orientation="vertical">
+
             <TextView
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
-                android:textSize="@dimen/text_margin_large"
-                android:text="@string/party_cloudy">
+                android:text="@string/party_cloudy"
+                android:textSize="@dimen/text_margin_large">
             </TextView>
+
             <TextView
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
-                android:textSize="@dimen/text_margin_medium"
-                android:text="@string/degree_1">
+                android:text="@string/degree_1"
+                android:textSize="@dimen/text_margin_medium">
             </TextView>
         </LinearLayout>
     </LinearLayout>
+
     <LinearLayout
         android:layout_width="match_parent"
-        android:orientation="horizontal"
-        android:layout_height="wrap_content">
+        android:layout_height="wrap_content"
+        android:orientation="horizontal">
+
         <TextView
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:textSize="@dimen/text_margin_large"
-            android:layout_marginEnd="@dimen/text_margin_medium"            android:text="@string/Fri">
+            android:layout_marginEnd="@dimen/text_margin_medium"
+            android:text="@string/Wed"
+            android:textSize="@dimen/text_margin_large">
         </TextView>
 
         <ImageView
             android:layout_width="51dp"
             android:layout_height="48dp"
-            android:layout_marginEnd="@dimen/text_margin_medium"            android:src="@drawable/cloudy">
+            android:layout_marginEnd="@dimen/text_margin_medium"
+            android:src="@drawable/cloudy">
         </ImageView>
+
         <LinearLayout
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:orientation="vertical">
+
             <TextView
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
-                android:textSize="@dimen/text_margin_large"
-                android:text="@string/party_cloudy">
+                android:text="@string/party_cloudy"
+                android:textSize="@dimen/text_margin_large">
             </TextView>
+
             <TextView
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
-                android:textSize="@dimen/text_margin_medium"
-                android:text="@string/degree_1">
+                android:text="@string/degree_1"
+                android:textSize="@dimen/text_margin_medium">
             </TextView>
         </LinearLayout>
     </LinearLayout>
+
     <LinearLayout
         android:layout_width="match_parent"
-        android:orientation="horizontal"
-        android:layout_height="wrap_content">
+        android:layout_height="wrap_content"
+        android:orientation="horizontal">
+
         <TextView
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:textSize="@dimen/text_margin_large"
-            android:layout_marginEnd="@dimen/text_margin_medium"            android:text="@string/Sat">
+            android:layout_marginEnd="@dimen/text_margin_medium"
+            android:text="@string/Thu"
+            android:textSize="@dimen/text_margin_large">
         </TextView>
 
         <ImageView
             android:layout_width="51dp"
             android:layout_height="48dp"
-            android:layout_marginEnd="@dimen/text_margin_medium"            android:src="@drawable/cloudy">
+            android:layout_marginEnd="@dimen/text_margin_medium"
+            android:src="@drawable/cloudy">
         </ImageView>
+
         <LinearLayout
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:orientation="vertical">
+
             <TextView
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
-                android:textSize="@dimen/text_margin_large"
-                android:text="@string/party_cloudy">
+                android:text="@string/party_cloudy"
+                android:textSize="@dimen/text_margin_large">
             </TextView>
+
             <TextView
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
-                android:textSize="@dimen/text_margin_medium"
-                android:text="@string/degree_1">
+                android:text="@string/degree_1"
+                android:textSize="@dimen/text_margin_medium">
             </TextView>
         </LinearLayout>
     </LinearLayout>
+
     <LinearLayout
         android:layout_width="match_parent"
-        android:orientation="horizontal"
-        android:layout_height="wrap_content">
+        android:layout_height="wrap_content"
+        android:orientation="horizontal">
+
         <TextView
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:textSize="@dimen/text_margin_large"
-            android:layout_marginEnd="@dimen/text_margin_medium"            android:text="@string/Sun">
+            android:layout_marginEnd="@dimen/text_margin_medium"
+            android:text="@string/Fri"
+            android:textSize="@dimen/text_margin_large">
         </TextView>
+
         <ImageView
             android:layout_width="51dp"
             android:layout_height="48dp"
-            android:layout_marginEnd="@dimen/text_margin_medium"            android:src="@drawable/cloudy">
+            android:layout_marginEnd="@dimen/text_margin_medium"
+            android:src="@drawable/cloudy">
         </ImageView>
+
         <LinearLayout
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:orientation="vertical">
+
             <TextView
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
-                android:textSize="@dimen/text_margin_large"
-                android:text="@string/party_cloudy">
+                android:text="@string/party_cloudy"
+                android:textSize="@dimen/text_margin_large">
             </TextView>
+
             <TextView
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
-                android:textSize="@dimen/text_margin_medium"
-                android:text="@string/degree_1">
+                android:text="@string/degree_1"
+                android:textSize="@dimen/text_margin_medium">
+            </TextView>
+        </LinearLayout>
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginEnd="@dimen/text_margin_medium"
+            android:text="@string/Sat"
+            android:textSize="@dimen/text_margin_large">
+        </TextView>
+
+        <ImageView
+            android:layout_width="51dp"
+            android:layout_height="48dp"
+            android:layout_marginEnd="@dimen/text_margin_medium"
+            android:src="@drawable/cloudy">
+        </ImageView>
+
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:orientation="vertical">
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="@string/party_cloudy"
+                android:textSize="@dimen/text_margin_large">
+            </TextView>
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="@string/degree_1"
+                android:textSize="@dimen/text_margin_medium">
+            </TextView>
+        </LinearLayout>
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginEnd="@dimen/text_margin_medium"
+            android:text="@string/Sun"
+            android:textSize="@dimen/text_margin_large">
+        </TextView>
+
+        <ImageView
+            android:layout_width="51dp"
+            android:layout_height="48dp"
+            android:layout_marginEnd="@dimen/text_margin_medium"
+            android:src="@drawable/cloudy">
+        </ImageView>
+
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:orientation="vertical">
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="@string/party_cloudy"
+                android:textSize="@dimen/text_margin_large">
+            </TextView>
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="@string/degree_1"
+                android:textSize="@dimen/text_margin_medium">
             </TextView>
         </LinearLayout>
     </LinearLayout>
