@@ -1,5 +1,6 @@
 package vn.edu.usth.weather;
 
+import android.media.MediaPlayer;
 import android.os.Bundle;
 import android.util.Log;
 
@@ -16,6 +17,9 @@ import androidx.viewpager2.widget.ViewPager2;
 
 import com.google.android.material.tabs.TabLayout;
 import com.google.android.material.tabs.TabLayoutMediator;
+
+import java.io.IOException;
+import java.io.InputStream;
 
 import vn.edu.usth.weather.viewpager.CustomPagerAdapter;
 
@@ -84,6 +88,8 @@ public class WeatherActivity extends AppCompatActivity {
     @Override
     protected void onStart() {
         super.onStart();
+        MediaPlayer mPlayer = MediaPlayer.create(WeatherActivity.this, R.raw.neuvianhnhu);
+        mPlayer.start();
         Log.i("start", "On start");
     }
 
