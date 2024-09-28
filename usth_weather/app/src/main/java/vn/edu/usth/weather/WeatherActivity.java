@@ -99,14 +99,25 @@ public class WeatherActivity extends AppCompatActivity {
     // responding to action
     @Override
     public boolean onOptionsItemSelected(@NonNull MenuItem item) {
-        if(item.getItemId() == R.id.action_refresh){
-            Toast.makeText(this, "Refresh", Toast.LENGTH_SHORT).show();
-            return true;
-        } else if(item.getItemId() == R.id.share) {
-            Toast.makeText(this, "Shared", Toast.LENGTH_SHORT).show();
-            return true;
+        switch (item.getItemId()) {
+            case R.id.action_refresh:
+                Toast.makeText(this, "Refresh", Toast.LENGTH_SHORT).show();
+                return true;
+
+            case R.id.share:
+                Toast.makeText(this, "Shared", Toast.LENGTH_SHORT).show();
+                return true;
+            default:
+                return super.onOptionsItemSelected(item);
         }
-        return super.onOptionsItemSelected(item);
+//        if(item.getItemId() == R.id.action_refresh){
+//            Toast.makeText(this, "Refresh", Toast.LENGTH_SHORT).show();
+//            return true;
+//        } else if(item.getItemId() == R.id.share) {
+//            Toast.makeText(this, "Shared", Toast.LENGTH_SHORT).show();
+//            return true;
+//        }
+//        return super.onOptionsItemSelected(item);
     }
 
     @Override
