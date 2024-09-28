@@ -3,6 +3,10 @@ package vn.edu.usth.weather;
 import android.media.MediaPlayer;
 import android.os.Bundle;
 import android.util.Log;
+import android.view.Menu;
+import android.view.MenuInflater;
+import android.view.MenuItem;
+import android.widget.Toast;
 
 import androidx.activity.EdgeToEdge;
 import androidx.annotation.NonNull;
@@ -83,6 +87,26 @@ public class WeatherActivity extends AppCompatActivity {
 //                .add(R.id.forecast_fragment_container, forecastFragment)
 //                .commit();
 //        setContentView(R.layout.background);
+    }
+
+    // inflating the menu
+    @Override
+    public boolean onCreateOptionsMenu(Menu menu) {
+        getMenuInflater().inflate(R.menu.main_menu,menu);
+        return true;
+    }
+
+    // responding to action
+    @Override
+    public boolean onOptionsItemSelected(@NonNull MenuItem item) {
+        if(item.getItemId() == R.id.action_refresh){
+            Toast.makeText(this, "Refresh", Toast.LENGTH_SHORT).show();
+            return true;
+        } else if(item.getItemId() == R.id.share) {
+            Toast.makeText(this, "Shared", Toast.LENGTH_SHORT).show();
+            return true;
+        }
+        return super.onOptionsItemSelected(item);
     }
 
     @Override

@@ -12,4 +12,7 @@
     <string name="usth_weather" translatable="false">USTH WEATHER</string>
     <string name="party_cloudy">Party Cloudy</string>
     <string name="degree_1" translatable="false">24C - 31C</string>
+    <string name="refresh">Refresh</string>
+    <string name="dropdown_menu" translatable="false">DropdownMenu</string>
+    <string name="share" translatable="false">Share</string>
 </resources>
