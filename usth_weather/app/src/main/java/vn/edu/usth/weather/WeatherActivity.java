@@ -2,7 +2,9 @@ package vn.edu.usth.weather;
 
 import static android.app.PendingIntent.getActivity;
 
+import android.graphics.Bitmap;
 import android.media.MediaPlayer;
+import android.os.AsyncTask;
 import android.os.Bundle;
 import android.os.Handler;
 import android.os.Looper;
@@ -29,6 +31,7 @@ import com.google.android.material.tabs.TabLayoutMediator;
 
 import java.io.IOException;
 import java.io.InputStream;
+import java.util.concurrent.ExecutorService;
 
 import vn.edu.usth.weather.viewpager.CustomPagerAdapter;
 
@@ -106,7 +109,8 @@ public class WeatherActivity extends AppCompatActivity {
     public boolean onOptionsItemSelected(@NonNull MenuItem item) {
         switch (item.getItemId()) {
             case R.id.action_refresh:
-                refresh();
+//                refresh();
+                refreshAsyncTask();
                 return true;
 
             case R.id.share:
@@ -150,6 +154,25 @@ public class WeatherActivity extends AppCompatActivity {
             }
         });
         t.start();
+    }
+
+    private void refreshAsyncTask(){
+        AsyncTask<String, Integer, Bitmap> task = new AsyncTask<String, Integer, Bitmap>() {
+            @Override
+            protected Bitmap doInBackground(String... params) {
+                try {
+                    Thread.sleep(1000);
+                } catch (InterruptedException e) {
+                    throw new RuntimeException(e);
+                }
+                return null;
+            }
+            @Override
+            protected void onPostExecute(Bitmap bitmap) {
+                Toast.makeText(getBaseContext(), "Refreshed", Toast.LENGTH_SHORT).show();
+            }
+        };
+        task.execute("http://ict.usth.edu.vn/wp-content/uploads/usth/usthlogo.png");
     }
 
     @Override
