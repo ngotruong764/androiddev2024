@@ -1,7 +1,12 @@
 package vn.edu.usth.weather;
 
+import static android.app.PendingIntent.getActivity;
+
 import android.media.MediaPlayer;
 import android.os.Bundle;
+import android.os.Handler;
+import android.os.Looper;
+import android.os.Message;
 import android.util.Log;
 import android.view.Menu;
 import android.view.MenuInflater;
@@ -101,7 +106,7 @@ public class WeatherActivity extends AppCompatActivity {
     public boolean onOptionsItemSelected(@NonNull MenuItem item) {
         switch (item.getItemId()) {
             case R.id.action_refresh:
-                Toast.makeText(this, "Refresh", Toast.LENGTH_SHORT).show();
+                refresh();
                 return true;
 
             case R.id.share:
@@ -118,6 +123,33 @@ public class WeatherActivity extends AppCompatActivity {
 //            return true;
 //        }
 //        return super.onOptionsItemSelected(item);
+    }
+
+    private void refresh(){
+        final Handler handler = new Handler(Looper.getMainLooper()) {
+            @Override
+            public void handleMessage(@NonNull Message msg) {
+                String content = msg.getData().getString("response");
+                Toast.makeText(getBaseContext(), content, Toast.LENGTH_SHORT).show();
+            }
+        };
+        Thread t = new Thread(new Runnable() {
+            @Override
+            public void run() {
+                try {
+                    Thread.sleep(1000);
+                }
+                catch (InterruptedException e) {
+                    e.printStackTrace();
+                }
+                Bundle bundle = new Bundle();
+                bundle.putString("response", "Refreshed");
+                Message msg = new Message();
+                msg.setData(bundle);
+                handler.sendMessage(msg);
+            }
+        });
+        t.start();
     }
 
     @Override
